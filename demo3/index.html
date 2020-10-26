@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Vue-键盘事件</title>
+</head>
+
+<body>
+    <!-- vue-app是根容器 -->
+    <div id="vue-app">
+        <h1> 键盘 Events </h1>
+        <label>姓名:</label>
+        <input type="text" v-on:keyup.enter="logName">
+        <label>年龄:</label>
+        <input type="text" v-on:keyup.alt.enter="logAge">
+        <!-- 链式修饰符 -->
+    </div>
+    <!-- {{ name }} 不可用-->
+    <script src="app.js"></script>
+</body>
+
+</html>
